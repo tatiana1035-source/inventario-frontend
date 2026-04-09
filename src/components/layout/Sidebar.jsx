@@ -31,7 +31,7 @@ function Sidebar() {
       {/* ── Logo / Nombre del sistema ── */}
       <div style={estilos.logo}>
         <span style={estilos.logoIcono}>📦</span>
-        <span style={estilos.logoTexto}>StockLogic</span>
+        <span style={estilos.logoTexto}>StockLogistic</span>
       </div>
 
       {/* ── Info del usuario ── */}

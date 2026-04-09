@@ -20,6 +20,9 @@ import Dashboard   from '../pages/dashboard/Dashboard';
 // --- Layout ---
 import Layout from '../components/layout/Layout';
 
+// --Módulos--
+import Inventario from '../inventario/Inventario';
+
 /**
  * PrivateRoute
  * Componente de orden superior que protege rutas privadas.
@@ -60,6 +63,17 @@ function AppRoutes() {
           </PrivateRoute>
       }
     />
+
+    {/* -- Inventario -- */}
+    <Route
+      path='/inventario'
+      element={
+        <PrivateRoute>
+          <Layout><Inventario /></Layout>
+        </PrivateRoute>
+      }
+    />
+
       {/* ── Ruta 404: cualquier ruta no definida redirige al inicio ── */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

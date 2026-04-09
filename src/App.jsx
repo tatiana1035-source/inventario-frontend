@@ -12,12 +12,6 @@ import { AuthProvider } from './context/AuthContext';
 import AppRoutes from './routes/AppRoutes';
 import './index.css';
 
-/**
- * App - Componente principal.
- * Envuelve toda la app con:
- *  - BrowserRouter: habilita el enrutamiento con historial del navegador.
- *  - AuthProvider: provee el estado de sesión a todos los componentes hijos.
- */
 function App() {
   return (
     <BrowserRouter>
