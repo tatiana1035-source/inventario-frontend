@@ -1,16 +1,48 @@
-# React + Vite
+# 📦 Sistema de Inventario - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React JS + Vite para la gestión de inventario de productos.
+Proyecto formativo SENA - Tecnología en Análisis y Desarrollo de Software.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React JS
+- Vite
+- React Router DOM
+- Context API (autenticación)
 
-## React Compiler
+## 📁 Estructura del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+src/
+├── App.jsx              # Componente raíz y proveedor de autenticación
+├── AppRoutes.jsx        # Enrutamiento con rutas públicas y privadas
+├── context/
+│   └── AuthContext.jsx  # Contexto global de autenticación
+├── pages/
+│   ├── Login.jsx        # Página de inicio de sesión
+│   ├── Dashboard.jsx    # Panel principal con KPIs y alertas
+│   └── Inventario.jsx   # Gestión de productos
+└── components/
+├── Layout.jsx        # Estructura visual principal
+├── Sidebar.jsx       # Menú lateral de navegación
+└── ProductoForm.jsx  # Formulario de registro/edición de productos
 
-## Expanding the ESLint configuration
+## ⚙️ Instalación y ejecución
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clona el repositorio:
+```bash
+   git clone https://github.com/tatiana1035-source/inventario-frontend.git
+```
+2. Instala las dependencias:
+```bash
+   npm install
+```
+3. Ejecuta el proyecto:
+```bash
+   npm run dev
+```
+4. Abre en el navegador: `http://localhost:5173`
+
+## 👩‍💻 Autora
+
+Yuli Tatiana Moreno Vásquez — Aprendiz SENA  
+Evidencia: GA7-220501096-AA4-EV03
